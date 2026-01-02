@@ -2,6 +2,7 @@ import pandas as pd
 import joblib 
 from sklearn.metrics import mean_squared_error as mse
 from sklearn.model_selection import train_test_split
+import numpy as np
 
 df=pd.read_csv('data/data.csv')
 
@@ -16,5 +17,5 @@ model=joblib.load('linear_regression_model.pkl')
 
 predictions=model.predict(x_test)
 
-rmse=mse(y_test,predictions)
+rmse=np.sqrt(mse(y_test,predictions))
 print("RMSE:",rmse)
