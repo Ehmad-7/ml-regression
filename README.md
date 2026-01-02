@@ -19,7 +19,7 @@ Predict house prices using supervised machine learning.
 
 ## Evaluation
 - Metric: RMSE
-- Result: (to be filled after evaluation)
+- Result: (RMSE: 4908476721.156641)
 
 ## Tools Used
 - Python
